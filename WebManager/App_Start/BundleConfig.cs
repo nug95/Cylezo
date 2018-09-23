@@ -21,7 +21,7 @@ namespace WebManager
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/PDZON.css"));
+                      "~/Content/PDZON_Default.css"));
         }
     }
 }

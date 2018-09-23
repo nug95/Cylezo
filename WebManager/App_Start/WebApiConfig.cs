@@ -19,6 +19,13 @@ namespace WebManager
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+
+            config.Routes.MapHttpRoute(
+                name: "PDZApi",
+                routeTemplate: "pdzapi/{action}/{controller}/{id}",
+                defaults: new { action = "Get", id = RouteParameter.Optional }
+            );
         }
     }
 }
